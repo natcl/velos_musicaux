@@ -18,14 +18,14 @@ int vitesse_moyenne;
 
 void setup() {                
   Serial.begin(38400);
-  pinMode(5, INPUT_PULLUP);
-  attachInterrupt(5, compteur, FALLING);
+  pinMode(2, INPUT_PULLUP);
+  attachInterrupt(2, compteur, FALLING);
   pinMode(13, OUTPUT);
 }
 
 void loop()                     
 {
-  if (digitalRead(5) == HIGH) 
+  if (digitalRead(2) == HIGH) 
   {
     digitalWrite(13, LOW);
   } 

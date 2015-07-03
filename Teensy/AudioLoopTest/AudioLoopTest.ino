@@ -33,13 +33,13 @@ void setup() {
 }
 
 void loop() {
-  float vol = analogRead(15);
-  vol = vol / 1024;
-  audioShield.volume(vol);
+  //float vol = analogRead(15);
+  //vol = vol / 1024;
+  //audioShield.volume(vol);
   delay(20);
   if (!wav.isPlaying())
   {
     Serial.println("Playing wav");
-    wav.play("01_16M.WAV");
+    wav.play("audio.wav");
   }
 }
